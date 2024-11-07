@@ -305,7 +305,7 @@ body {
 .image-container {
   padding: 2%;
   display: flex;
-  flex-wrap: wrap; /* Allows images to wrap to the next row */
+//flex-wrap: wrap; /* Allows images to wrap to the next row */
   justify-content: space-between; /* Evenly spaces images */
   gap: 10px; /* Adds space between the images */
 }
