@@ -311,23 +311,23 @@ body {
 }
 
 .image-container img {
-  width: 200px; /* Fixed width for images */
-  height: 200px; /* Fixed height for images */
+  width: 150px; /* Fixed width for images */
+  height: 150px; /* Fixed height for images */
   object-fit: cover; /* Ensures the image fits the width/height without distortion */
   margin-top: 2%;
 }
 
 @media (max-width: 900px) {
   .image-container img {
-    width: 170px; /* Reduce size on smaller screens */
-    height: 170px;
+    width: 150px; /* Reduce size on smaller screens */
+    height: 150px;
   }
 }
 
 @media (max-width: 600px) {
   .image-container img {
-    width: 170px; /* Further reduce size for mobile screens */
-    height: 170px;
+    width: 150px; /* Further reduce size for mobile screens */
+    height: 150px;
   }
 }
 
