@@ -177,7 +177,7 @@
 	 id="youtubeVideo"
           width="560"
           height="250"
-          src="https://www.youtube.com/embed/nzavtpTJUCY?autoplay=0&mute=1&si=EmqNoRhSv9tONUfF"
+          src="https://www.youtube.com/embed/nzavtpTJUCY?autoplay=1&mute=1&si=EmqNoRhSv9tONUfF"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -540,7 +540,7 @@
         // Check if the iframe src has 'mute=1'
         if (iframeSrc.includes("mute=1")) {
             // Replace mute=1 with mute=0 to unmute
-            iframe.src = iframeSrc.replace("mute=1", "mute=0").replace("autoplay=0", "autoplay=1");
+            iframe.src = iframeSrc.replace("mute=1", "mute=0");
         }
     });
 </script>
