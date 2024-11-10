@@ -532,17 +532,17 @@
       }
     </script>
 <script>
-        // Function to handle scroll event and unmute the video
-        window.onscroll = function() {
-            var iframe = document.getElementById("youtubeVideo");
-            var iframeSrc = iframe.src;
+    var iframe = document.getElementById("youtubeVideo");
 
-            // Check if the iframe src has 'mute=1'
-            if (iframeSrc.includes("mute=1")) {
-                // Replace mute=1 with mute=0 when user scrolls
-                iframe.src = iframeSrc.replace("mute=1", "mute=0").replace("autoplay=0","autoplay=1");
-            }
-        };
-    </script>
+    iframe.addEventListener("focus", function() {
+        var iframeSrc = iframe.src;
+
+        // Check if the iframe src has 'mute=1'
+        if (iframeSrc.includes("mute=1")) {
+            // Replace mute=1 with mute=0 to unmute
+            iframe.src = iframeSrc.replace("mute=1", "mute=0").replace("autoplay=0", "autoplay=1");
+        }
+    });
+</script>
   </body>
 </html>
