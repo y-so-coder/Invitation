@@ -343,7 +343,7 @@
 
       (function () {
         // Initialize EmailJS with your public key
-        emailjs.init("YOUR_PUBLIC_KEY");
+        emailjs.init("34I-gi_7e6SKWDBCq");
 
         document
           .getElementById("wishForm")
@@ -360,12 +360,12 @@
               from_name: name,
               nickname: nickname,
               message: message,
-              to_name: "Your Name", // Replace with your name
+              to_name: "Akash", // Replace with your name
             };
 
             // Send email using EmailJS
             emailjs
-              .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+              .send("service_rfo9ktm", "template_1bw3ypa", templateParams)
               .then(
                 function () {
                   // Show success message
